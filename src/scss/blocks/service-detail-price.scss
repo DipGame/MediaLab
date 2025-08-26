@@ -1,0 +1,159 @@
+.service-detail-price {
+    margin-bottom: 80px;
+}
+
+.service-detail-price-container {
+    border: 1px solid #D2DBE3;
+    box-shadow: 0px 4px 6px -4px #121A2B0D;
+    box-shadow: 0px 8px 12px -4px #121A2B14;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.service-detail-price-top {
+    padding-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #CFDFEE;
+    margin-bottom: 20px;
+
+    h3 {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+}
+
+.service-detail-price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        h4 {
+            width: fit-content;
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        p {
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Medium;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            white-space: nowrap;
+
+            * {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            span {
+                font-weight: 600;
+                display: contents;
+            }
+        }
+    }
+}
+
+.service-detail-price-line {
+    border-bottom: 1px solid #CFDFEE;
+    flex: 1 1 auto;
+}
+
+.service-detail-price-bottom-text {
+    margin-top: 40px;
+    font-family: Golos Text;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--text-color-3);
+}
+
+@media (max-width: 720px) {
+    .service-detail-price-line {
+        display: none;
+    }
+
+    .service-detail-price-list li {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #CFDFEE;
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-price {
+        margin-bottom: 30px;
+    }
+
+    .service-detail-price-container {
+        padding: 30px 20px;
+    }
+
+    .service-detail-price-top {
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
+        h3 {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 12px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .service-detail-price-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+            p {
+                font-size: 14px;
+
+                * {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .service-detail-price-bottom-text {
+        margin-top: 20px;
+    }
+}

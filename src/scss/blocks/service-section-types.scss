@@ -1,0 +1,103 @@
+.service-section-types {
+    padding: 60px 0;
+}
+
+.service-section-types-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    transition: .5s;
+    border-radius: 0 0 12px 12px;
+
+    @media (min-width: 1171px) {
+        &:hover {
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+    }
+
+    .img {
+        aspect-ratio: 420/240;
+        border-radius: 12px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px 25px;
+        height: 100%;
+
+        h3 {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 22px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        .default {
+            margin-bottom: 0;
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+
+            * {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+
+        .btn {
+            max-width: 161px;
+            height: 44px;
+            margin-top: auto;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .service-section-types {
+        padding: 30px 0;
+    }
+
+    .service-section-types-card {
+
+        .img {
+            aspect-ratio: 343/240;
+        }
+
+        .cont {
+            height: auto;
+
+            h3 {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 22px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+    }
+}

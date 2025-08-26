@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./fonts/Golos.css" />
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/bvi.min.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU" type="text/javascript"></script>
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+
+	<a href="#" class="fixed-med-bag">
+		<img src="./img/52d584b963d9186866cdd6d23b1fd6e2dce02685.png" alt="med-bag">
+	</a>
+
+	@@include('blocks/load.html')
+	@@include('blocks/overlay.html')
+	@@include('blocks/popup-form.html')
+	@@include('blocks/popupCheck.html')
+	@@include('blocks/header.html')
+	<main>
+        @@include('blocks/bread.html')
+        <h1 class="title">
+			Ультразвуковое исследование органов
+			брюшной полости 
+        </h1>
+		@@include('blocks/service-detail-link-blocks.html')
+		@@include('blocks/service-detail-baner.html')
+		@@include('blocks/service-detail-types.html')
+		@@include('blocks/service-detail-docs.html')
+		@@include('blocks/service-detail-price.html') 
+		@@include('blocks/service-detail-baner-v2.html')
+		@@include('blocks/service-detail-preparation.html')
+		@@include('blocks/desk-form-service.html')
+		@@include('blocks/main-rews.html')
+	</main>
+	@@include('blocks/footer.html')
+	
+	<script src="./js/bvi.min.js"></script>
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/map.js"></script>
+
+
+</body>
+
+</html>

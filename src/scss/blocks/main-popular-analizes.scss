@@ -1,0 +1,202 @@
+.main-popular-analizes {
+    padding: 40px 30px;
+    background-color: #F6F9FF;
+    border-radius: 16px;
+}
+
+.main-popular-analizes-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-popular-analizes-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &.v2 {
+        li {
+            a {
+                min-width: auto;
+                max-width: none;
+            }
+        }
+    }
+
+    li {
+        a {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px -4px #121A2B0D;
+
+            box-shadow: 0px 3px 6px -4px #121A2B12;
+
+            border-radius: 10px;
+            padding: 10px 5px 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: space-between;
+            transition: .5s;
+            min-width: 295px;
+            max-width: 295px;
+
+            &:hover {
+                background-color: var(--btn-bg-color-1);
+
+                * {
+                    color: #FFF;
+                }
+
+                svg {
+
+                    path {
+                        fill: #FFF;
+                    }
+                }
+            }
+
+            * {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                transition: .5s;
+            }
+
+            svg {
+                max-width: 44px;
+                max-height: 44px;
+                min-height: 44px;
+                min-width: 44px;
+            }
+        }
+    }
+}
+
+.main-popular-analizes-last-link {
+    background: var(--btn-bg-color-1) !important;
+    box-shadow: 0px 2px 6px -4px #121A2B0D;
+    box-shadow: 0px 3px 6px -4px #121A2B12;
+    border-radius: 10px;
+    padding: 10px 5px 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    transition: .5s;
+    min-width: 295px;
+    max-width: 295px;
+
+    * {
+        color: #FFF;
+    }
+
+    svg {
+
+        path {
+            fill: #FFF;
+        }
+    }
+
+    &:hover {
+        background-color: #FFF !important;
+
+        * {
+            color: var(--text-color) !important;
+        }
+
+        svg {
+
+            path {
+                fill: var(--btn-bg-color-1) !important;
+            }
+        }
+    }
+
+}
+
+.main-popular-analizes-help-cont {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .main-popular-analizes-list:not(.v2) {
+        overflow-x: scroll;
+        max-width: 100%;
+    }
+
+    .main-popular-analizes-last-link:not(.v2) {
+        display: none;
+    }
+
+    .main-popular-analizes-help-cont {
+        display: block;
+    }
+
+    .main-popular-analizes-last-link.v2 {
+        display: flex;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-popular-analizes-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 970px) {
+    .main-popular-analizes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .main-popular-analizes-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-popular-analizes {
+        padding: 30px 0;
+
+        &:not(.v2) {
+            border-radius: 0;
+        }
+
+        &.v2 {
+            .def-title {
+                line-height: 140%;
+            }
+        }
+
+        .def-title {
+            padding: 0 var(--def-padding);
+        }
+    }
+
+    .main-popular-analizes-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+
+        &.v2 {
+            padding: 0 var(--def-padding);
+        }
+    }
+
+    .main-popular-analizes-list {
+        padding: 0 var(--def-padding);
+    }
+
+    .main-popular-analizes-help-cont {
+        padding: 0 var(--def-padding);
+    }
+}

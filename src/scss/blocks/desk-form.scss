@@ -1,0 +1,200 @@
+.desk-form-section {
+    margin-bottom: 60px;
+
+    &.v2 {
+        margin-top: 60px;
+    }
+}
+
+.desk-form {
+    background-color: #06A765;
+    padding: 60px 80px;
+    border-radius: 16px;
+    position: relative;
+
+    *:not(input) {
+        color: #FFF;
+    }
+
+    .inputs_cont {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        .input_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            input {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                height: 50px;
+                width: 100%;
+                max-width: 280px;
+                border-radius: 10px;
+                border: 1px solid #0061BC;
+                padding: 0 16px;
+                background-color: #FFF;
+            }
+
+            span {
+                display: none;
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            &.err {
+                input {
+                    border: 1px solid var(--color-red);
+                    color: var(--color-red);
+
+                    &::placeholder {
+                        color: var(--color-red);
+                    }
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .btn {
+        max-width: 192px;
+        margin-bottom: 20px;
+    }
+
+    .bottom-text {
+        font-family: Golos Text;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        display: block;
+        max-width: 693px;
+        position: relative;
+        z-index: 1;
+
+        * {
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.desk-form-container {
+    width: 100%;
+    max-width: 695px;
+    position: relative;
+    z-index: 1;
+}
+
+.desk-form-title {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    max-width: 537px;
+}
+
+.desk-form-img {
+    position: absolute;
+    aspect-ratio: 365/484;
+    width: 365px;
+    right: 80px;
+    bottom: 0;
+    z-index: 0;
+}
+
+@media (max-width: 1280px) {
+    .desk-form-img {
+        right: 0px;
+    }
+}
+
+@media (max-width: 720px) {
+    .desk-form {
+        padding: 30px 20px 227px;
+        position: relative;
+    }
+
+    .desk-form .inputs_cont {
+        flex-direction: column;
+
+        .input_cont {
+            input {
+                max-width: none;
+            }
+        }
+    }
+
+    .desk-form .btn {
+        max-width: none;
+    }
+
+    .desk-form .bottom-text {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .desk-form-img {
+        width: 185px;
+    }
+}
+
+@media (max-width: 500px) {
+    .desk-form-section {
+        margin-bottom: 30px;
+
+        &.v2 {
+            margin-top: 30px;
+        }
+    }
+
+    .desk-form-title {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+}

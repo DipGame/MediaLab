@@ -1,1 +1,12 @@
-# MediaLab
+https://dipgame.github.io/MediaLab/
+https://dipgame.github.io/MediaLab/service-section.html
+https://dipgame.github.io/MediaLab/service-detail.html
+https://dipgame.github.io/MediaLab/service-detail-detail.html
+https://dipgame.github.io/MediaLab/specialists.html
+https://dipgame.github.io/MediaLab/doctor-detail.html
+https://dipgame.github.io/MediaLab/doctors-list.html
+https://dipgame.github.io/MediaLab/doctor-specialist.html
+https://dipgame.github.io/MediaLab/analizes.html
+https://dipgame.github.io/MediaLab/stocks.html
+https://dipgame.github.io/MediaLab/about.html
+https://dipgame.github.io/MediaLab/contacts.html

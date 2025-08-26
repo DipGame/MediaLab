@@ -1,0 +1,55 @@
+.service-detail-baner {
+    padding: 60px 0 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    .left {
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .default {
+            margin-bottom: 0;
+        }
+    }
+
+    &.v2 {
+        padding: 40px 30px;
+        background-color: #F6F9FF;
+        border-radius: 16px;
+        margin-bottom: 60px;
+    }
+}
+
+.service-detail-baner-img {
+    object-fit: cover;
+    object-position: center;
+    height: fit-content;
+    max-width: 390px;
+    aspect-ratio: 390/250;
+    border-radius: 16px;
+}
+
+
+@media (max-width: 720px) {
+    .service-detail-baner {
+        flex-direction: column;
+    }
+
+    .service-detail-baner-img {
+        max-width: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-baner {
+        padding: 56px 0 30px;
+
+        &.v2 {
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

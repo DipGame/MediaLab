@@ -1,0 +1,13 @@
+.service-section-text {
+    margin-bottom: 60px;
+
+    .default {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .service-section-text {
+        margin-bottom: 30px;
+    }
+}

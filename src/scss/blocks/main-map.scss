@@ -1,0 +1,113 @@
+.main-map {
+    margin-bottom: 60px;
+    background-color: #F6F9FF;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    #map {
+        height: 300px;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+}
+
+.about-map {
+    padding: 60px 0 30px;
+    
+    .def-title {
+        margin-bottom: 0;
+    }
+
+    &.contacts-map {
+        padding: 0;
+    }
+}
+
+.about-map-section {
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 30px;
+}
+
+.main-map-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFF;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px #16544526;
+    transition: .5s;
+    width: 100%;
+
+    @media (min-width: 1171px) {
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    &.active {
+        transform: scale(0.9);
+    }
+
+    * {
+        transition: .5s;
+    }
+
+    h3 {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 20px;
+    }
+
+    .phone {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: var(--btn-bg-color-1);
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    p {
+        font-family: Golos Text;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-map-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-map {
+        margin-bottom: 0;
+        border-radius: 0;
+        padding: 30px var(--def-padding);
+        gap: 20px;
+    }
+
+    .about-map {
+        padding: 30px 0 30px;
+    }
+}

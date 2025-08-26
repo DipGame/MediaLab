@@ -1,0 +1,126 @@
+.service-detail-link-blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .btn {
+        max-width: 209px;
+        width: 100%;
+        height: 44px;
+    }
+}
+
+.service-detail-link-blocks-container {
+    display: flex;
+    gap: 40px;
+
+    a {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        transition: .5s;
+        padding: 11px 0 20px;
+        border-bottom: 2px solid #0061bc00;
+
+        &:hover {
+            color: var(--btn-bg-color-1);
+            border-bottom: 2px solid var(--btn-bg-color-1);
+        }
+
+        &.active {
+            color: var(--btn-bg-color-1);
+            border-bottom: 2px solid var(--btn-bg-color-1);
+        }
+    }
+
+
+}
+
+@media (max-width: 970px) {
+
+    .service-detail-link-blocks-section {
+        padding: 0;
+
+        .btn {
+            // margin-right: auto;
+        }
+    }
+
+    .service-detail-link-blocks {
+        // flex-direction: column;
+    }
+
+    .service-detail-link-blocks-help-container {
+        padding-right: var(--def-padding);
+    }
+
+    .service-detail-link-blocks-container {
+        gap: 24px;
+        width: fit-content;
+
+        // border-bottom: 1px solid #DBDBDB;
+        overflow-x: scroll;
+        padding: 0 var(--def-padding);
+
+        a {
+            white-space: nowrap;
+            padding: 0 0 15px;
+            border-bottom: 2px solid #0061bc00;
+
+            &:hover {
+                color: var(--btn-bg-color-1);
+                border-bottom: 2px solid #0061bc00;
+            }
+
+            &.active {
+                color: var(--btn-bg-color-1);
+                border-bottom: 2px solid #0061bc00;
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .service-detail-link-blocks {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .service-detail-link-blocks-container {
+        border-bottom: 1px solid #DBDBDB;
+        width: 100%;
+    }
+
+    .service-detail-link-blocks-help-container {
+        padding: 0 var(--def-padding);
+        width: 100%;
+
+        .btn {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-link-blocks-container {
+    
+        a {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 24px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    
+    
+    }
+}

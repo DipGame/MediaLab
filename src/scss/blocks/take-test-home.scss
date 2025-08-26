@@ -1,0 +1,134 @@
+.take-test-home-section {
+    margin-bottom: 60px;
+}
+
+.take-test-home {
+    padding: 40px;
+    border-radius: 16px;
+    background-color: #F6F9FF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-position: 100% 50%;
+    background-size: auto 90%;
+}
+
+.take-test-home-left-container {
+    max-width: 670px;
+}
+
+.take-test-home-title {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--btn-bg-color-1);
+    margin-bottom: 20px;
+}
+
+.take-test-home-default-container {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #232323;
+    margin-bottom: 30px;
+
+    * {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #232323;
+    }
+}
+
+.take-test-home-bottom-container {
+    display: flex;
+    gap: 10px;
+
+
+    .button_v2 {
+        max-width: 195px;
+    }
+
+    .button_v3 {
+        max-width: 149px;
+    }
+}
+
+@media (max-width: 720px) {
+    .take-test-home {
+        padding-bottom: 320px;
+        background-position: 0 100%;
+        background-size: auto 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .take-test-home-section {
+        margin-bottom: 30px;
+    }
+
+    .take-test-home {
+        padding: 30px 20px 320px;
+        align-items: start;
+    }
+
+    .take-test-home-left-container {
+        max-width: none;
+    }
+
+    .take-test-home-title {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+
+    .take-test-home-default-container {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+        * {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .take-test-home-bottom-container {
+      flex-direction: column;
+
+        .button_v2, .button_v3 {
+            max-width: none;
+        }
+    }
+}

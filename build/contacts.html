@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./fonts/Golos.css" />
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/bvi.min.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU" type="text/javascript"></script>
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+
+	<a href="#" class="fixed-med-bag">
+		<img src="./img/52d584b963d9186866cdd6d23b1fd6e2dce02685.png" alt="med-bag">
+	</a>
+
+	<div id="load-svg" class="load_svg "><svg class="" id="" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="64px" height="64px" viewBox="0 0 128 128" xml:space="preserve">
+    <g>
+        <linearGradient id="linear-gradient">
+            <stop offset="0%" stop-color="#0061BC"></stop>
+            <stop offset="50%" stop-color="#FFF"></stop>
+        </linearGradient>
+        <path d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z" fill="url(#linear-gradient)" fill-rule="evenodd"></path>
+        <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms" repeatCount="indefinite"></animateTransform>
+    </g>
+</svg></div>
+	<div class="overlay"></div>
+	<div class="popupForm form-all" id="popup-call-back">
+    <form class="popup__container form">
+        <svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27.5843 30L10 12.4157L12.4157 10L30 27.5843L47.5844 10L50 12.4157L32.4157 30L49.9436 47.5263L47.5263 49.9436L30 32.4157L12.4157 50L10 47.5844L27.5843 30Z"
+                fill="#222" />
+        </svg>
+        <div class="popupForm-title">
+            Записаться на прием
+        </div>
+        <p>
+            Мы свяжемся с вами в самое ближайшее время
+        </p>
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <input type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="input_cont">
+                <input type="text" name="phone" placeholder="Ваш номер телефона">
+            </div>
+        </div>
+        <span>
+            Нажимая на кнопку, вы даете согласие на <a href="">обработку своих персональных данных</a> и принимаете
+            <a href="">политику конфиденциальности</a>
+        </span>
+        <button class="button" type="submit">
+            Записаться
+        </button>
+    </form>
+</div>
+	<div class="popupCheck">
+    <div class="popup__container"><svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none"></rect>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5843 30 10 12.4157 12.4157 10 30 27.5843 47.5844 10 50 12.4157 32.4157 30 49.9436 47.5263 47.5263 49.9436 30 32.4157 12.4157 50 10 47.5844 27.5843 30Z" fill="#222"></path>
+        </svg>
+        <h2></h2>
+    </div>
+</div>
+	<header class="flex flex-direct padding">
+    <div class="header-overlay">
+
+    </div>
+    <div class="header-top-container">
+        <p class="header-time-work-text">
+            Работаем Ежедневно
+        </p>
+        <div class="header-cont-1">
+            <div class="header-cont-1-1">
+                <div class="header-cont-phone">
+                    <p class="name">
+                        ДЦ на Технической
+                    </p>
+                    <a href="tel:+79222222222" class="phone">
+                        +7 (922) 222-22-22
+                    </a>
+                </div>
+                <div class="header-cont-phone">
+                    <p class="name">
+                        ДЦ на Ак. Шварца
+                    </p>
+                    <a href="tel:+79222222222" class="phone">
+                        +7 (922) 222-22-22
+                    </a>
+                </div>
+                <div class="header-cont-phone">
+                    <p class="name">
+                        ДЦ на Бардина
+                    </p>
+                    <a href="tel:+79222222222" class="phone">
+                        +7 (922) 222-22-22
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="bvi-open" title="Версия для слабовидящих">
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.00045 0.75C11.9729 0.750176 14.84 2.50493 16.9018 5.79199C17.5561 6.83543 17.5561 8.16457 16.9018 9.20801C14.84 12.4951 11.9729 14.2498 9.00045 14.25C6.02793 14.25 3.16099 12.4951 1.09909 9.20801C0.444632 8.16447 0.444632 6.83553 1.09909 5.79199C3.16099 2.50489 6.02793 0.75 9.00045 0.75ZM9.00045 2.25C6.66826 2.25 4.23023 3.62265 2.36959 6.58887C2.02083 7.14502 2.02083 7.85498 2.36959 8.41113C4.23023 11.3774 6.66826 12.75 9.00045 12.75C11.3326 12.7498 13.7708 11.3773 15.6313 8.41113C15.9799 7.85507 15.9799 7.14493 15.6313 6.58887C13.7708 3.6227 11.3326 2.25017 9.00045 2.25ZM9.00045 3.75C11.0713 3.75024 12.7505 5.42908 12.7505 7.5C12.7505 9.57092 11.0713 11.2498 9.00045 11.25C6.92939 11.25 5.25045 9.57107 5.25045 7.5C5.25045 5.42893 6.92939 3.75 9.00045 3.75ZM8.80319 5.25977C8.92762 5.47835 9.00045 5.7305 9.00045 6C9.00045 6.82828 8.32868 7.49976 7.50045 7.5C7.23088 7.5 6.97786 7.4282 6.75924 7.30371C6.75365 7.36842 6.75045 7.43384 6.75045 7.5C6.75045 8.74264 7.75781 9.75 9.00045 9.75C10.2429 9.74976 11.2505 8.74249 11.2505 7.5C11.2505 6.25751 10.2429 5.25024 9.00045 5.25C8.9341 5.25 8.86808 5.25414 8.80319 5.25977Z"
+                        fill="#222222" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-middle-container">
+        <a class="logo-link" href="/">
+            <img class="logo-img" src="./img/logo.png" alt="logo">
+        </a>
+        <div class="header-cont-1">
+            <div class="header-cont-1-1" data-copy-container="1">
+                <a class="button">
+                    Вызов медсестры на дом
+                </a>
+                <a class="button_v2" data-popup-open="popup-call-back">
+                    Записаться на прием
+                </a>
+                <div class="departure-mobile-team-cont">
+                    <p class="departure-mobile-team-text">
+                        Выезд мобильной бригады
+                    </p>
+                    <a class="departure-mobile-team-phone" href="tel:+7 (922) 222-22-22">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.84435 11.0565L6.93896 9.15426C6.32567 8.54198 6.32567 7.54929 6.93896 6.93701C7.48706 6.38983 7.55329 5.52526 7.09491 4.90124L5.53039 2.77136C5.06723 2.14083 4.1501 2.07081 3.59629 2.62369C2.75315 3.46544 2.18861 4.57941 2.25534 5.76795C2.58138 11.5744 7.12377 15.456 12.2607 15.7448C13.4387 15.811 14.5358 15.2422 15.3701 14.4092C15.9322 13.8481 15.861 12.9189 15.22 12.4496L13.1045 10.9008C12.4794 10.4432 11.6134 10.5093 11.0653 11.0565C10.452 11.6687 9.45765 11.6687 8.84435 11.0565Z"
+                                fill="#0061BC" />
+                        </svg>
+
+                        +7 (922) 222-22-22
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-cont-1-2">
+                <a class="header-cont-1-2-adres-btn" href="#">
+                    Адреса ДЦ
+                </a>
+                <a class="soc-link tg-link" href="#">
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.4654 0.132424C16.4654 0.132424 18.1306 -0.516861 17.9918 1.05998C17.9455 1.70927 17.5293 3.98177 17.2055 6.4398L16.0954 13.7211C16.0954 13.7211 16.0029 14.7878 15.1703 14.9733C14.3377 15.1588 13.0889 14.324 12.8576 14.1385C12.6726 13.9994 9.38863 11.9123 8.23226 10.892C7.90848 10.6138 7.53845 10.0572 8.27851 9.40795L13.1352 4.77021C13.6902 4.21367 14.2453 2.9151 11.9326 4.49194L5.45705 8.89782C5.45705 8.89782 4.71699 9.36158 3.3294 8.94419L0.322895 8.01664C0.322895 8.01664 -0.787196 7.32098 1.10921 6.62528C5.73459 4.44553 11.4238 2.2194 16.4654 0.132424Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-bottom-container">
+        <div class="header-hidd-container">
+            <ul class="header-menu">
+                <!-- Анализы -->
+                <li class="drop_1 first_link">
+                    <div data-href="/" class="cont_1">
+                        <a class="link" href="/">
+                            Анализы
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li class="active"><a href="#">Анализ крови</a></li>
+                                <li><a href="#">Анализ мочи</a></li>
+                                <li><a href="#">Анализ кала</a></li>
+                                <li><a href="#">Анализ гормонов</a></li>
+                                <li><a href="#">Анализ крови на COVID-19</a></li>
+                                <li><a href="#">Анализ ДНК</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Диагностика -->
+                <li class="first_link drop_1 active">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#f">
+                            Диагностика
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li class="active"><a href="#">УЗИ внутренних органов</a></li>
+                                <li><a href="#">ЭКГ</a></li>
+                                <li><a href="#">Рентген</a></li>
+                                <li><a href="#">МРТ</a></li>
+                                <li><a href="#">КТ</a></li>
+                                <li><a href="#">Эндоскопия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Услуги -->
+                <li class="first_link drop_1">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#">
+                            Услуги
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li><a href="#">Приём врача</a></li>
+                                <li><a href="#">Лабораторные исследования</a></li>
+                                <li><a href="#">Диагностические процедуры</a></li>
+                                <li><a href="#">Профилактические осмотры</a></li>
+                                <li><a href="#">Санаторно-курортное лечение</a></li>
+                                <li><a href="#">Медицинская реабилитация</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Врачи -->
+                <li class="first_link drop_1">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#">
+                            Врачи
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li><a href="#">Терапевт</a></li>
+                                <li><a href="#">Хирург</a></li>
+                                <li><a href="#">Стоматолог</a></li>
+                                <li><a href="#">Офтальмолог</a></li>
+                                <li><a href="#">Отоларинголог</a></li>
+                                <li><a href="#">Психолог</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Специалисты -->
+                <li class="first_link drop_1">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#">
+                            Специалисты
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li><a href="#">Физиотерапевт</a></li>
+                                <li><a href="#">Массажист</a></li>
+                                <li><a href="#">Психотерапевт</a></li>
+                                <li><a href="#">Диетолог</a></li>
+                                <li><a href="#">Логопед</a></li>
+                                <li><a href="#">Ортопед</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Акции -->
+                <li class="first_link" data-href="/">
+                    <a class="link" href="/">
+                        Акции
+                    </a>
+                </li>
+
+                <!-- О клинике -->
+                <li class="first_link drop_1">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#">
+                            О клинике
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li><a href="#">История клиники</a></li>
+                                <li><a href="#">Наши врачи</a></li>
+                                <li><a href="#">Наши специалисты</a></li>
+                                <li><a href="#">Наши услуги</a></li>
+                                <li><a href="#">Отзывы пациентов</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Пациентам -->
+                <li class="first_link drop_1">
+                    <div data-href="#" class="cont_1">
+                        <a class="link" href="#">
+                            Пациентам
+                        </a>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66669 6.66669L8.00002 9.33335L11.3334 6.66669" stroke="#222222"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+
+                    <div class="menu_cont_2">
+                        <div class="cont_07">
+                            <ul class="menu_2">
+                                <li><a href="#">Как записаться на приём</a></li>
+                                <li><a href="#">Правила посещения</a></li>
+                                <li><a href="#">Частые вопросы</a></li>
+                                <li><a href="#">Безопасность пациента</a></li>
+                                <li><a href="#">Полезная информация</a></li>
+                                <li><a href="#">Скидки и акции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Контакты -->
+                <li class="first_link" data-href="/">
+                    <a class="link" href="/">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header-paste-container" data-paste-container="1">
+
+            </div>
+
+        </div>
+        <div id="menu-container">
+            <div id="menu-wrapper">
+                <div id="hamburger-menu"><span></span><span></span><span></span></div>
+                <!-- hamburger-menu -->
+            </div>
+        </div>
+
+        <a href="/" class="logo-link-mob">
+            <img class="logo-img-mob" src="./img/logo.png" alt="logo-mob">
+        </a>
+
+        <div class="btn-open-search" data-id="search-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4 10C4 10.7879 4.15519 11.5681 4.45672 12.2961C4.75825 13.0241 5.20021 13.6855 5.75736 14.2426C6.31451 14.7998 6.97595 15.2417 7.7039 15.5433C8.43185 15.8448 9.21207 16 10 16C10.7879 16 11.5681 15.8448 12.2961 15.5433C13.0241 15.2417 13.6855 14.7998 14.2426 14.2426C14.7998 13.6855 15.2417 13.0241 15.5433 12.2961C15.8448 11.5681 16 10.7879 16 10C16 9.21207 15.8448 8.43185 15.5433 7.7039C15.2417 6.97595 14.7998 6.31451 14.2426 5.75736C13.6855 5.20021 13.0241 4.75825 12.2961 4.45672C11.5681 4.15519 10.7879 4 10 4C9.21207 4 8.43185 4.15519 7.7039 4.45672C6.97595 4.75825 6.31451 5.20021 5.75736 5.75736C5.20021 6.31451 4.75825 6.97595 4.45672 7.7039C4.15519 8.43185 4 9.21207 4 10Z"
+                    stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 19L14.5 14.5" stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="header-search" id="title-search">
+            <form class="header-search_form" action="/search/index.php">
+                <div class="cont_2">
+                    <div class="cont_32">
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 10C4 10.7879 4.15519 11.5681 4.45672 12.2961C4.75825 13.0241 5.20021 13.6855 5.75736 14.2426C6.31451 14.7998 6.97595 15.2417 7.7039 15.5433C8.43185 15.8448 9.21207 16 10 16C10.7879 16 11.5681 15.8448 12.2961 15.5433C13.0241 15.2417 13.6855 14.7998 14.2426 14.2426C14.7998 13.6855 15.2417 13.0241 15.5433 12.2961C15.8448 11.5681 16 10.7879 16 10C16 9.21207 15.8448 8.43185 15.5433 7.7039C15.2417 6.97595 14.7998 6.31451 14.2426 5.75736C13.6855 5.20021 13.0241 4.75825 12.2961 4.45672C11.5681 4.15519 10.7879 4 10 4C9.21207 4 8.43185 4.15519 7.7039 4.45672C6.97595 4.75825 6.31451 5.20021 5.75736 5.75736C5.20021 6.31451 4.75825 6.97595 4.45672 7.7039C4.15519 8.43185 4 9.21207 4 10Z"
+                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19 19L14.5 14.5" stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50"
+                        autocomplete="off" placeholder="Поиск по сайту">
+
+                    <div class="search_rez">
+                        <ul>
+                            <li>
+                                <a href="/stock/skidki-molodozhenam-i-ikh-roditelyam/">Скидки молодоженам и их
+                                    родителям</a>
+                            </li>
+                            <li>
+                                <a href="/stock/vakuumnyy-lpg-massazh-tela/">Вакуумный LPG массаж тела</a>
+                            </li>
+                            <li>
+                                <a href="/stock/kriolipoliz/">Криолиполиз</a>
+                            </li>
+                            <li>
+                                <a href="/equipment/skin-station-mistral/">Skin Station Mistral</a>
+                            </li>
+                            <li>
+                                <a href="/stock/skidki-molodozhenam-i-ikh-roditelyam/">Скидки молодоженам и их
+                                    родителям</a>
+                            </li>
+                            <li>
+                                <a href="/stock/vakuumnyy-lpg-massazh-tela/">Вакуумный LPG массаж тела</a>
+                            </li>
+                            <li>
+                                <a href="/stock/kriolipoliz/">Криолиполиз</a>
+                            </li>
+                            <li>
+                                <a href="/equipment/skin-station-mistral/">Skin Station Mistral</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+</header>
+	<main>
+        <div class="bread flex padding grey" id="bread">
+    <ul class="def_div" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+        <li id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+            <a href="/" title="Главная" itemprop="item">
+                Главная
+            </a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li>
+            /
+        </li>
+        <li id="bx_breadcrumb_1" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+            <a href="/uborka-ofisov/" title="Уборка помещений" itemprop="item">
+                Уборка помещений
+            </a>
+            <meta itemprop="position" content="2">
+        </li>
+        <li>
+            /
+        </li>
+        <li>
+            Дезинфекция офисов
+        </li>
+    </ul>
+</div>
+        <h1 class="title">
+            Контакты
+        </h1>
+		<section class='padding flex about-map-section contacts-map-section'>
+    <div class='def_div about-map contacts-map'>
+       
+    </div>
+</section>
+
+<section class='padding flex main-map-section'>
+
+    <div class='def_div main-map'>
+        <div id="map">
+
+        </div>
+        <div class="our-directions-grid">
+            <div class="main-map-card">
+                <h3>
+                    ДЦ на Технической 64
+                </h3>
+                <a class="phone" href="tel:+7(922) 105-00-55">
+                    +7(922) 105-00-55
+                </a>
+                <p>
+                    Пн-Пт: 7:30-19:30 <br>
+                    Сб, Вс: 7:30-17:00
+                </p>
+            </div>
+            <div class="main-map-card">
+                <h3>
+                    ДЦ на Технической 64
+                </h3>
+                <a class="phone" href="tel:+7(922) 105-00-55">
+                    +7(922) 105-00-55
+                </a>
+                <p>
+                    Пн-Пт: 7:30-19:30 <br>
+                    Сб, Вс: 7:30-17:00
+                </p>
+            </div>
+            <div class="main-map-card">
+                <h3>
+                    ДЦ на Технической 64
+                </h3>
+                <a class="phone" href="tel:+7(922) 105-00-55">
+                    +7(922) 105-00-55
+                </a>
+                <p>
+                    Пн-Пт: 7:30-19:30 <br>
+                    Сб, Вс: 7:30-17:00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+	</main>
+	<footer class="flex flex-direct">
+    <div class=" footer-container">
+        <div class=" footer-top_container">
+            <div class="def_div footer-help-container-1">
+                <div class="footer-left_cont">
+                    <a class="footer-logo" href="/">
+                        <img src="./img/logo.png" alt="footer-logo">
+                    </a>
+                    <div class="footer-adress_cont" data-copy-container="23">
+                        <p class="link-title">
+                            Выезд мобильной бригады
+                        </p>
+                        <a href="tel:+7 (922) 181-34-00" class="phone">
+                            +7 (922) 181-34-00
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-menu footer-check-height-cont ">
+                    <div class="footer-menu_cont">
+                        <a class="footer-menu_title active" href="">
+                            Медилаб
+                        </a>
+                        <ul data-id="0" class="footer-check-height ">
+                            <li class="active">
+                                <a href="">
+                                    Анализы
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Диагностика
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    О клинике
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Врачи
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Специалисты
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Акции
+                                </a>
+                            </li>
+                        </ul>
+                        <div data-id="0-footer-menu" class="more-height invise">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                        fill="#0061BC"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="footer-menu_cont ">
+                        <a class="footer-menu_title">
+                            Информация
+                        </a>
+                        <ul data-id="1" class="footer-check-height ">
+                            <li class="active">
+                                <a href="">
+                                    Пациентам
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Правовая информация
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Лицензии
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    Политика конфиденциальности
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div data-id="1-footer-menu" class="more-height invise">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                        fill="#0061BC"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-hidd-container" data-paste-container="23">
+                    
+                </div>
+
+                <div class="footer-right_cont">
+                    <div class="addres-container">
+                        <div class="adres">
+                            ДЦ на Ак. Шварца 14
+                        </div>
+                        <a class="phone" href="tel:+7 (922) 601- 97-25">
+                            +7 (922) 601- 97-25
+                        </a>
+                        <p class="time-work">
+                            Пн-Пт: 7:30-19:30 <br>
+                            Сб, Вс: 7:30-18:00
+                        </p>
+                    </div>
+                    <div class="addres-container">
+                        <div class="adres">
+                            ДЦ на Бардина 17
+                        </div>
+                        <a class="phone" href="tel:+7 (922) 181-34-00">
+                            +7 (922) 181-34-00
+                        </a>
+                        <p class="time-work">
+                            Пн-Пт: 7:00-20:00 <br>
+                            Сб, Вс: 7:30-18:00
+                        </p>
+                    </div>
+                    <div class="addres-container">
+                        <div class="adres">
+                            ДЦ на Технической 64
+                        </div>
+                        <a class="phone" href="tel:+7(922) 105-00-55">
+                            +7(922) 105-00-55
+                        </a>
+                        <p class="time-work">
+                            Пн-Пт: 7:30-19:30 <br>
+                            Сб, Вс: 7:30-17:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="def_div  footer-bottom_container">
+            <div class="footer-help-container-2">
+                <p class="text">
+                    2025 © Сеть диагностический центров
+                </p>
+                <p class="text">
+                    Обращаем ваше внимание, что вся информация, включая цены, предоставлена для ознакомления и не
+                    является публичной офертой (ст.435 ГК РФ, ст. 437 ГК РФ). Имеются противопоказания, необходима
+                    консультация специалиста
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+	
+	<script src="./js/bvi.min.js"></script>
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/map.js"></script>
+
+
+</body>
+
+</html>

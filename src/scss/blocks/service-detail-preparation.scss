@@ -1,0 +1,28 @@
+.service-detail-preparation-default {
+    gap: 30px;
+    margin: 0;
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+    }
+}
+
+.service-detail-preparation {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 720px) {
+    .service-detail-preparation-default {
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-preparation {
+        margin-bottom: 30px;
+    }
+}

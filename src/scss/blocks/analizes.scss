@@ -1,0 +1,301 @@
+.analizes {
+    padding: 60px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    background-color: #F6F9FF;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 310px;
+    height: fit-content;
+
+    li {
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 15px 20px;
+            background-color: #FFF;
+            border-radius: 10px;
+
+            p {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                transition: .5s;
+            }
+
+            .arrow-bottom,
+            .arrow-right {
+                display: none;
+            }
+
+            &:hover {
+                p {
+                    color: var(--btn-bg-color-1);
+                }
+            }
+        }
+
+        &.active {
+            a {
+                p {
+                    color: var(--btn-bg-color-1);
+                }
+
+                .arrow-right {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.analizes-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.analizes-right-title {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.analizes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.analiz-container {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #D2DBE3;
+    border-radius: 10px;
+    width: 100%;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        h3 {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 22px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: var(--btn-bg-color-1);
+        }
+
+        .price {
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 22px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #FF6D3B;
+            white-space: nowrap;
+
+            * {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 22px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #FF6D3B;
+                white-space: nowrap;
+            }
+
+            span {
+                font-weight: 500;
+                display: contents;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .bottom-left {
+            display: flex;
+            gap: 15px;
+
+            .clock-img {
+                max-width: 22px;
+                max-height: 22px;
+                min-height: 22px;
+                min-width: 22px;
+                object-fit: contain;
+                object-position: center;
+            }
+
+            .text {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #868686;
+            }
+        }
+
+        .btn {
+            max-width: 180px;
+            height: 44px;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .analizes {
+        flex-direction: column;
+    }
+
+    .left-menu {
+        max-width: none;
+
+        li {
+            &:not(.active, .open li) {
+                display: none;
+            }
+
+            a {
+
+                .arrow-bottom,
+                .arrow-right {
+                    display: none;
+                }
+            }
+
+            &.active {
+                a {
+                    p {
+                        color: var(--text-color);
+                    }
+
+                    .arrow-right {
+                        display: none;
+                    }
+
+                    .arrow-bottom:not(.open li a .arrow-bottom) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            li.active {
+                a {
+                    p {
+                        color: var(--btn-bg-color-1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .analiz-container .bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .analizes {
+        padding: 30px 0;
+    }
+
+
+    .analiz-container {
+        padding: 20px;
+        gap: 15px;
+
+        .top {
+            h3 {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            .price {
+                font-family: Golos Text;
+                font-weight: 400;
+                font-style: Medium;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+                * {
+                    font-family: Golos Text;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 18px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .bottom {
+
+            .bottom-left {
+                display: flex;
+                gap: 15px;
+            }
+
+            .btn {
+                max-width: none;
+            }
+        }
+    }
+}

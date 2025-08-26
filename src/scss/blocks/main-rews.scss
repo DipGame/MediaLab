@@ -1,0 +1,271 @@
+.main-rews-section {
+    background-color: #F6F9FF;
+}
+
+.main-rews {
+    padding: 60px 0;
+}
+
+.main-rews-top-container {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    a {
+        width: fit-content;
+        padding: 0 20px;
+        height: 56px;
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+        .reit {
+            display: none;
+        }
+
+        img {
+            object-fit: contain;
+            object-position: center;
+        }
+
+        &:hover:not(.button) {
+            background: none;
+        }
+    }
+}
+
+.main-rews-card {
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 1px solid #E9E9E9;
+    padding: 30px;
+
+    .rew-name {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 5px;
+    }
+
+    .stars-container {
+        display: flex;
+        margin-bottom: 5px;
+
+        svg {
+            max-width: 18px;
+            max-height: 16px;
+            min-height: 16px;
+            min-width: 18px;
+        }
+    }
+
+    .rew-date {
+        font-family: Golos Text;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #757575;
+    }
+
+    .rew-text {
+        margin: 20px 0 0;
+        font-family: Golos Text;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+        * {
+            font-family: Golos Text;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .button-more {
+        margin-top: 8px;
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: var(--btn-bg-color-1);
+    }
+}
+
+.swiperRews-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main-rews-hidden-container {
+    display: none;
+}
+
+.swiperRews-button-prev,
+.swiperRews-button-next {
+    cursor: pointer;
+}
+
+.swiperRews-button-next {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 500px) {
+    .main-rews-section {
+        padding: 0;
+    }
+
+    .swiperRews {
+        padding: 0 var(--def-padding);
+    }
+
+
+
+    .main-rews {
+        padding: 30px 0;
+
+        .def-title {
+            padding: 0 var(--def-padding);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+
+            h2 {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            .rew-link {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 24px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+
+        .button_v3 {
+            grid-row: 2 span;
+            margin-left: auto;
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
+    .main-rews-hidden-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 var(--def-padding);
+        margin-bottom: 16px;
+    }
+
+    .main-rews-top-container {
+        margin-bottom: 24px;
+        display: grid;
+        gap: 20px;
+        flex-wrap: nowrap;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 var(--def-padding);
+
+        a.button_v3 {
+            height: fit-content;
+            width: fit-content;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            margin-right: 0;
+            display: flex;
+            gap: 8px;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            .reit {
+                font-family: Golos Text;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                display: block;
+                white-space: nowrap;
+            }
+        }
+
+        .button {
+            display: none;
+        }
+    }
+
+    .main-rews-card {
+        padding: 30px 20px;
+        width: 320px;
+    }
+}
+
+@media (max-width: 374px) {
+    .main-rews-top-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        a.button_v3 {
+            margin: 0 auto;
+
+            &:nth-child(2n) {
+                margin: 0 auto;
+            }
+        }
+
+    }
+}

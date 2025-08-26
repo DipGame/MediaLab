@@ -1,0 +1,242 @@
+.baner-slide {
+    border-radius: 16px;
+    padding: 50px 40px;
+    background-position: 107% 100%;
+    background-color: #0061BC;
+    height: auto;
+
+    * {
+        color: #FFF;
+    }
+
+    .default {
+        margin: 0 0 36px;
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+        * {
+            font-family: Golos Text;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+
+    .button_v2 {
+        max-width: 161px;
+        margin-top: auto;
+    }
+}
+
+.baner {
+    border-radius: 16px;
+}
+
+.baner-left-container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about {
+    .baner-left-container {
+        max-width: 630px;
+    }
+
+    .baner-slide .default {
+        max-width: 446px;
+    }
+
+    .baner-cont-1 {
+        margin-bottom: 0;
+    }
+
+    .baner-cont-1-1 {
+        background: none;
+    }
+
+    .service-section-baner-slide {
+        background-size: auto 100%;
+    }
+
+    .main-about-bottom {
+        margin-bottom: 60px;
+    }
+}
+
+.baner-name {
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+
+.baner-cont-1 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.baner-cont-1-1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Golos Text;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border: 1px solid #FFFFFF80;
+    background: #FFFFFF26;
+    border-radius: 10px;
+}
+
+.swiperBaner {
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 5px 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        max-width: 8px;
+        max-height: 8px;
+        min-height: 8px;
+        min-width: 8px;
+        background: #FFFFFF80;
+        transition: .5s;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #FFF;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .swiperBaner {
+        .swiper-pagination-bullet {
+            display: none;
+        }
+    }
+
+    .about .service-section-baner-slide {
+        background-position: 100% 100%;
+    }
+}
+
+
+@media (max-width: 970px) {
+    .about .service-section-baner-slide {
+        background-position: 109% 138%;
+        background-size: auto 314px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .baner-section {
+        padding: 0;
+    }
+
+    .baner {
+        border-radius: 0;
+    }
+
+    .about .baner-slide {
+        background-position: 91px 147%;
+        background-size: auto 390px;
+    }
+
+    .about .baner-cont-1-1 {
+        // background-color: #FFFFFF26;
+    }
+
+    .about .main-about-bottom {
+        padding: 0 var(--def-padding);
+        margin-bottom: 30px;
+    }
+
+    .baner-slide {
+        border-radius: 0;
+        padding: 40px var(--def-padding) 276px;
+        background-position: -47% 100%;
+        background-size: auto 338px;
+        height: auto;
+        position: relative;
+
+        * {
+            color: #FFF;
+        }
+
+        .default {
+            margin: 0 0 30px;
+        }
+
+        .button_v2 {
+            margin-top: 0;
+        }
+    }
+
+    .baner-left-container {
+        max-width: none;
+        height: auto;
+    }
+
+    .baner-name {
+        font-family: Golos Text;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 120%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 24px;
+    }
+
+    .baner-cont-1 {
+        margin-bottom: 0;
+        flex-direction: column;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        padding: 0 var(--def-padding);
+    }
+
+    .baner-cont-1-1 {
+        width: fit-content;
+    }
+}
