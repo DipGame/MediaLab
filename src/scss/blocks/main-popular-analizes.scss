@@ -144,19 +144,19 @@
 }
 
 @media (max-width: 1280px) {
-    .main-popular-analizes-list {
+    .main-popular-analizes-list.v2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 970px) {
-    .main-popular-analizes-list {
+    .main-popular-analizes-list.v2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 720px) {
-    .main-popular-analizes-list {
+    .main-popular-analizes-list.v2 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
